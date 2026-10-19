@@ -34890,10 +34890,10 @@ Escape Timer: %*]]
 
 										if not (tbl12.GetMagnitude(v23, v27) > 33) then
 											tbl12.Grab(v27)
-											flag12 = tbl9.NKDelayMode == "Faster but worse" or not tbl9.NKDelayMode
+											flag12 = tbl9.NKDelayMode == "Faster but worse (trust me its faster)" or not tbl9.NKDelayMode
 
 											if flag12 then
-												task.delay(0, tbl12.RNO, v27)
+												task.delay(0.01, tbl12.RNO, v27)
 											elseif tbl9.NKDelayMode == "Normal" then
 												task.spawn(function()
 													task.wait()
